@@ -1,0 +1,9 @@
+plugins:
+  - "prettier-plugin-astro"
+
+tabWidth: 4
+useTabs: true
+singleQuote: true
+semi: true
+bracketSameLine: true
+bracketSpacing: true
