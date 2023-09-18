@@ -1,0 +1,27 @@
+---
+interface Props {
+    language?: string
+    siteName?: string
+    title? : string
+}
+
+const {language = 'ru', siteName = 'Ирий', title } = Astro.props;
+
+
+const pageTitle = `${title} | ${siteName}`
+
+
+
+---
+
+<html lang={language}>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
